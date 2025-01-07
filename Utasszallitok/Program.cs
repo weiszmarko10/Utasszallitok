@@ -9,6 +9,9 @@
             {
                 jarmuadatok.Add(new jarmuadat(sor));
             }
+            Console.WriteLine($"4.Feladat: Ennyi darab repűlőgép van : {jarmuadatok.Count}");
+
+
         }
     }
 }
