@@ -11,7 +11,13 @@
             }
             Console.WriteLine($"4.Feladat: Ennyi darab repűlőgép van : {jarmuadatok.Count}");
 
-
+            int boenig = 0;
+            foreach (var r in jarmuadatok)
+            {
+                string[] b = r.Típus.Split('-');
+                boenig += Math.Abs(int.Parse(b[0]) - int.Parse(b[1]);
+            }
+            Console.WriteLine($"5.Feladat: {boeing} Ennyi darab repűlőgép van");
         }
     }
 }
