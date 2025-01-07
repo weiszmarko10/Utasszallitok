@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Utasszallitok
 {
-    internal class jarmuadatok
+    internal class jarmuadat
     {
         public string Típus { get; set; }
         public int Év { get; set; }
@@ -17,7 +17,7 @@ namespace Utasszallitok
         public int Felszállótömeg { get; set; }
         public string Fesztáv { get; set; }
 
-        public jarmuadatok(string sor)
+        public jarmuadat(string sor)
         {
             string[] s = sor.Split(';');
             Típus = s[0];

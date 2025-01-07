@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List<jarmuadat> jarmuadatok= new();
+            foreach (var sor in File.ReadAllLines("utasszallitok.txt").Skip(1))
+            {
+                jarmuadatok.Add(new jarmuadat(sor));
+            }
         }
     }
 }
